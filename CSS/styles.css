@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, "Sans Serif";
+  background-color: #1f1f1f;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #1c1c1c;
+}
+
+header h1 {
+  font-size: 24;
+  font-weight: 700;
+  color: white;
+}
+
+header ul {
+  display: flex;
+  gap: 24px;
+}
+
+header ul li a {
+  color: white;
+}
+
+.hero {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  height: 100vh;
+  padding: 24px;
+  overflow: hidden;
+}
+
+.hero .text-part,
+.hero .columns-container {
+  width: 50%;
+}
+
+.hero .columns-container {
+  display: flex;
+  gap: 24px;
+  user-select: none;
+}
+
+.hero .columns-container .column {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.hero .columns-container .column:hover {
+  animation-play-state: paused;
+}
+
+.col1 {
+  animation: moveUpDown 6s linear infinite;
+  -webkit-animation: moveUpDown 6s linear infinite;
+}
+
+.col2 {
+  animation: moveUpDown 8s linear infinite;
+  -webkit-animation: moveUpDown 8s linear infinite;
+}
+
+.col3 {
+  animation: moveUpDown 7s linear infinite;
+  -webkit-animation: moveUpDown 7s linear infinite;
+}
+
+@keyframes moveUpDown {
+  to {
+    transform: translateY(calc(-100% - 595px));
+    -webkit-transform: translateY(calc(-100% - 595px));
+    -moz-transform: translateY(calc(-100% - 595px));
+    -ms-transform: translateY(calc(-100% - 595px));
+    -o-transform: translateY(calc(-100% - 595px));
+  }
+}
+
+.hero .columns-container .column .card {
+  height: 400px;
+  width: 100%;
+  flex-shrink: 0;
+  /*background-color: #6c6c6c;
+  */
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+.col1 .card:nth-child(1),
+.col1 .card:nth-child(4) {
+  background-image: url("../assets/1.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.col1 .card:nth-child(2),
+.col1 .card:nth-child(5) {
+  background-image: url("../assets/2.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.col1 .card:nth-child(3),
+.col1 .card:nth-child(6) {
+  background-image: url("../assets/3.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.col2 .card:nth-child(1),
+.col2 .card:nth-child(4) {
+  background-image: url("../assets/4.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.col2 .card:nth-child(2),
+.col2 .card:nth-child(5) {
+  background-image: url("../assets/5.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.col2 .card:nth-child(3),
+.col2 .card:nth-child(6) {
+  background-image: url("../assets/6.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.col3 .card:nth-child(1),
+.col3 .card:nth-child(4) {
+  background-image: url("../assets/7.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.col3 .card:nth-child(2),
+.col3 .card:nth-child(5) {
+  background-image: url("../assets/8.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.col3 .card:nth-child(3),
+.col3 .card:nth-child(6) {
+  background-image: url("../assets/9.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+/* helper */
+
+/* .c1 {
+  background-color: red;
+}
+
+.c2 {
+  background-color: green;
+}
+
+.c3 {
+  background-color: blue;
+} */
